@@ -8,13 +8,12 @@
                             <p>I'm</p>
                             <h1>Muremi Peter</h1>
                             <h2></h2>
-                            <div class="typed-text">Software Engineer,Web Designer, Web Developer, Front End Developer,
-                                Apps Designer, Apps
-                                Developer</div>
+                            <div class="typed-text">Software Engineer</div>
+
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="">CV</a>
-                            <a class="btn" href="">Hire Me</a>
+                            <a class="btn" href="">Download CV</a>
+                            {{-- <a class="btn" href="">Hire Me</a> --}}
                             <a class="btn" href="">Contact Me</a>
                         </div>
                     </div>
@@ -47,7 +46,11 @@
                         </div>
                         <div class="about-text">
                             <p>
-                                I am a dedicated software engineer with 5 years of experience in the tech industry. My expertise lies in developing efficient and reliable software solutions for complex problems. Throughout my career, I have worked on various projects, honing my skills in web development, mobile app development, and network security. I am passionate about leveraging technology to create impactful solutions and 
+                                I am a dedicated software engineer with 5 years of experience in the tech industry. My
+                                expertise lies in developing efficient and reliable software solutions for complex
+                                problems. Throughout my career, I have worked on various projects, honing my skills in
+                                web development, mobile app development, and network security. I am passionate about
+                                leveraging technology to create impactful solutions and
                                 continuously seek opportunities to expand my knowledge and skills.
                             </p>
                         </div>
@@ -221,11 +224,12 @@
                         <h2>Web Developer</h2>
                         <h4>Mcomps Limited</h4>
                         <p>
-                            Created web-based applications and delivered technical expertise to enhance online platforms.
+                            Created web-based applications and delivered technical expertise to enhance online
+                            platforms.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2021 - 2022</div>
@@ -242,7 +246,8 @@
                         <h2>Network Engineering</h2>
                         <h4>Kengen Kipevu Mombasa</h4>
                         <p>
-                            Designed and implemented robust network architectures to meet organizational needs, ensuring scalability and reliability.
+                            Designed and implemented robust network architectures to meet organizational needs, ensuring
+                            scalability and reliability.
                         </p>
                     </div>
                 </div>
@@ -302,41 +307,50 @@
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="{{ asset('img/portfolio-1.jpg') }}" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>eCommerce Website</h3>
-                            <a class="btn" href="{{ asset('img/portfolio-1.jpg') }}"
-                                data-lightbox="portfolio">+</a>
-                        </div>
+                        <a href="https://angoloexpert.com/" class="mil-card">
+                            <div class="portfolio-img">
+                                <img src="{{ asset('img/portfolio-1.jpg') }}" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <a href="https://angoloexpert.com/"><b>Angolo Experts</b></a>
+
+                                <a href="{{ asset('img/portfolio-1.jpg') }}"></a>
+
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="{{ asset('img/portfolio-2.jpg') }}" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Product Landing Page</h3>
-                            <a class="btn" href="{{ asset('img/portfolio-2.jpg') }}"
-                                data-lightbox="portfolio">+</a>
-                        </div>
+                        <a href="https://m.mcomps.co.ke/" class="mil-card">
+                            <div class="portfolio-img">
+                                <img src="{{ asset('img/portfolio-2.jpg') }}" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a>
+
+                                <a href="{{ asset('img/portfolio-2.jpg') }}"></a>
+
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="{{ asset('img/portfolio-3.jpg') }}" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>JavaScript quiz game</h3>
-                            <a class="btn" href="{{ asset('img/portfolio-3.jpg') }}"
-                                data-lightbox="portfolio">+</a>
-                        </div>
+                        <a href="https://pointpro.mcomps.co.ke/" class="mil-card">
+                            <div class="portfolio-img">
+                                <img src="{{ asset('img/portfolio-3.jpg') }}" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+
+                                <a href="https://pointpro.mcomps.co.ke/"><b>Point Pro</b></a>
+                                <a href="{{ asset('img/portfolio-3.jpg') }}"></a>
+
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                {{-- <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
                             <img src="{{ asset('img/portfolio-4.jpg') }}" alt="Image">
@@ -371,7 +385,7 @@
                                 data-lightbox="portfolio">+</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -547,8 +561,8 @@
 
 
     <div class="team" id="team">
-    <div class="container">
-        {{-- <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <div class="container">
+            {{-- <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
             <p>My Team</p>
             <h2>Expert Team Members</h2>
         </div>
@@ -634,8 +648,8 @@
                 </div>
             </div>
         </div> --}}
+        </div>
     </div>
-</div>
 
 
 
