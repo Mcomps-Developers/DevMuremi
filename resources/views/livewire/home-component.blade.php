@@ -12,15 +12,15 @@
 
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="">Download CV</a>
-                            {{-- <a class="btn" href="">Hire Me</a> --}}
-                            <a class="btn" href="">Contact Me</a>
+                            <button wire:click="downloadCv" class="btn btn-primary">Download My CV</button>
+                            <a href="#contact" class="btn">Contact Me</a>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 d-none d-md-block">
                     <div class="hero-image">
-                        <img src="{{ asset('img/hero.png') }}" alt="Hero Image">
+                        <img src="{{ asset('img/hero.jpg') }}" alt="Hero Image">
                     </div>
                 </div>
             </div>
@@ -35,14 +35,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="img/about.jpg" alt="Image">
+                        <img src="img/about.png" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="section-header text-left">
                             <p>Learn About Me</p>
-                            <h2>5 Years Experience</h2>
+                            <h2>4 Years Experience</h2>
                         </div>
                         <div class="about-text">
                             <p>
@@ -209,8 +209,8 @@
                 </div>
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Since 2020</div>
-                        <h2>Freelancer</h2>
+                        <div class="timeline-date">2020</div>
+                        <h2>IT Consultant</h2>
                         <h4>Baraton University</h4>
                         <p>
                             Operated as a freelancer, offering expertise in diverse IT fields such as web development
@@ -243,7 +243,7 @@
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2023</div>
-                        <h2>Network Engineering</h2>
+                        <h2>Networking</h2>
                         <h4>Kengen Kipevu Mombasa</h4>
                         <p>
                             Designed and implemented robust network architectures to meet organizational needs, ensuring
@@ -258,6 +258,17 @@
                         <h4>Afric Developers LLC</h4>
                         <p>
                             Acquired practical web development experience during an internship at Smatech Labs
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">Since 2024</div>
+                        <h2>Software Engineer </h2>
+
+                        <h4>At <a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a></h4>
+                        <p>
+                            We design, develop, and support business applications using the latest technology and standards.
                         </p>
                     </div>
                 </div>
@@ -662,29 +673,37 @@
                     <div class="col-md-8">
                         <div class="contact-form">
                             <div id="success"></div>
+                            @if (Session::has('message'))
+                                <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
+
+                            @endif
                             <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="name"
+                                    <input type="text" class="form-control" id="name" wire:model='name' required=""
                                         placeholder="Your Name" required="required"
                                         data-validation-required-message="Please enter your name" />
                                     <p class="help-block"></p>
+                                    @error('name') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control" id="email" wire:model='email' required=""
                                         placeholder="Your Email" required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block"></p>
+                                    @error('email') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                    <input type="text" class="form-control" id="subject" wire:model='subject' required="" placeholder="Subject"
                                         required="required"
                                         data-validation-required-message="Please enter a subject" />
                                     <p class="help-block"></p>
+                                    @error('subject') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" id="message" placeholder="Message" required="required"
+                                    <textarea class="form-control" id="message" wire:model='message' required="" placeholder="Message" required="required"
                                         data-validation-required-message="Please enter your message"></textarea>
                                     <p class="help-block"></p>
+                                    @error('message') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div>
                                     <button class="btn" type="submit" id="sendMessageButton">Send

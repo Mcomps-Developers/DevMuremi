@@ -26,6 +26,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    @livewireStyles()
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -40,6 +41,8 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
                     <a href="#home" class="nav-item nav-link active">Home</a>
+
+
                     <a href="#about" class="nav-item nav-link">About</a>
                     <a href="#service" class="nav-item nav-link">My Services</a>
                     <a href="#experience" class="nav-item nav-link">Resume</a>
@@ -48,6 +51,7 @@
                     {{-- <a href="#review" class="nav-item nav-link">Review</a> --}}
                     {{-- <a href="#team" class="nav-item nav-link">Team</a> --}}
                     {{-- <a href="#blog" class="nav-item nav-link">Blog</a> --}}
+                    <a href="https://m.mcomps.co.ke/" class="nav-item nav-link">Mcomps</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
@@ -66,7 +70,7 @@
             <div class="container">
                 <div class="footer-info">
                     <h2>Bungoma</h2>
-                    <h3>Crossrode, Bungoma, Kenya</h3>
+                    <h3>Crossrodes, Bungoma, Kenya</h3>
                     <div class="footer-menu">
                         <p>+254 794069346</p>
                         <p>petermuremi351@gmail.com</p>
@@ -76,7 +80,7 @@
                         <a href="https://www.facebook.com/profile.php?id=100085648657027"><i
                                 class="fab fa-facebook-f"></i></a>
                         {{-- <a href=""><i class="fab fa-youtube"></i></a> --}}
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/alhajike/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/muremi-peter-ab421a231/"><i
                                 class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/petermuremi351?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
@@ -123,6 +127,7 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>
