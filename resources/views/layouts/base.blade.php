@@ -76,6 +76,10 @@
                         <p>petermuremi351@gmail.com</p>
                     </div>
                     <div class="footer-social">
+                        <a href="https://wa.me/254794069346?text=Hello%2C%20I%20would%20like%20to%20contact%20you" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
                         <a href="https://x.com/alhaji_melvin"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100085648657027"><i
                                 class="fab fa-facebook-f"></i></a>
@@ -83,7 +87,7 @@
                         <a href="https://www.instagram.com/alhajike/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/muremi-peter-ab421a231/"><i
                                 class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/petermuremi351?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/petermuremi351" target="_blank"><i class="fab fa-github"></i></a>
                         ``
 
                     </div>

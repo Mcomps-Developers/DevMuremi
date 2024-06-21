@@ -36,7 +36,7 @@ class HomeComponent extends Component
 
     public function downloadCv()
     {
-        return response()->download(storage_path('app/downloads/muremi.pdf'));
+        return response()->download(storage_path('app/downloads/muremiCv.pdf'));
     }
 
     public function render()

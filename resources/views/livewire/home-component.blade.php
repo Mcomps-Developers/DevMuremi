@@ -8,11 +8,11 @@
                             <p>I'm</p>
                             <h1>Muremi Peter</h1>
                             <h2></h2>
-                            <div class="typed-text">Software Engineer</div>
+                            <div class="typed-text">Software Engineer, DevOps</div>
 
                         </div>
                         <div class="hero-btn">
-                            <button wire:click="downloadCv" class="btn btn-primary">Download My CV</button>
+                            <button wire:click="downloadCv" class="btn btn-primary">Hire Me</button>
                             <a href="#contact" class="btn">Contact Me</a>
                         </div>
 
@@ -35,7 +35,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="img/about.png" alt="Image">
+                        <img src="{{ asset('img/about.png') }}" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -46,10 +46,10 @@
                         </div>
                         <div class="about-text">
                             <p>
-                                I am a dedicated software engineer with 5 years of experience in the tech industry. My
+                                I am a dedicated software engineer with 4 years of experience in the tech industry. My
                                 expertise lies in developing efficient and reliable software solutions for complex
                                 problems. Throughout my career, I have worked on various projects, honing my skills in
-                                web development, mobile app development, and network security. I am passionate about
+                                web development, mobile app development and network security. I am passionate about
                                 leveraging technology to create impactful solutions and
                                 continuously seek opportunities to expand my knowledge and skills.
                             </p>
@@ -57,14 +57,22 @@
                         <div class="skills">
                             <div class="skill-name">
                                 <p>Web Design</p>
-                                <p>89%</p>
+                                <p>93%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0"
+                                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
                             <div class="skill-name">
-                                <p>Web Development</p>
+                                <p>Mobile App Development</p>
+                                <p>87%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Graphic Design</p>
                                 <p>91%</p>
                             </div>
                             <div class="progress">
@@ -72,19 +80,19 @@
                                     aria-valuemax="100"></div>
                             </div>
                             <div class="skill-name">
-                                <p>Apps Design</p>
-                                <p>82%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                            <div class="skill-name">
-                                <p>Apps Development</p>
+                                <p>DevOps</p>
                                 <p>88%</p>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Cybersecurity</p>
+                                <p>80%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -108,16 +116,20 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fas fa-server"></i> <!-- Updated icon for System Administration -->
                         </div>
                         <div class="service-text">
-                            <h3>Web Design</h3>
+                            <h3>System Administration</h3> <!-- Updated title for System Administration -->
                             <p>
-                                I specialize in creating visually appealing and user-friendly web designs. My designs
-                                are focused on delivering an intuitive user experience while ensuring brand consistency.
+                                I provide comprehensive system administration services, including server management,
+                                network monitoring and
+                                ensuring system security and performance. My goal is to maintain and optimize IT
+                                infrastructure for
+                                reliability and efficiency.
                             </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item">
@@ -128,7 +140,7 @@
                             <h3>Web Development</h3>
                             <p>
                                 With a strong background in front-end and back-end development, I build robust, scalable
-                                web applications. My tech stack includes HTML, CSS, JavaScript, laravel and php.
+                                web applications. My tech stack includes HTML, CSS, JavaScript, laravel, livewire, blade and php.
                             </p>
                         </div>
                     </div>
@@ -136,22 +148,24 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fab fa-android"></i>
+                            <i class="fas fa-tools"></i> <!-- Updated icon for DevOps -->
                         </div>
                         <div class="service-text">
-                            <h3>Mobile Apps Design</h3>
+                            <h3>DevOps Services</h3> <!-- Updated title for DevOps -->
                             <p>
-                                I design intuitive mobile applications for both Android and iOS platforms. My focus is
-                                on creating designs that provide a seamless user experience and engage users
-                                effectively.
+                                I provide comprehensive DevOps services, including continuous integration, continuous
+                                delivery and
+                                automated testing to streamline your software development lifecycle and improve
+                                efficiency.
                             </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fab fa-apple"></i>
+                            <i class="fab fa-android"></i>
                         </div>
                         <div class="service-text">
                             <h3>Mobile Apps Development</h3>
@@ -162,6 +176,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i> <!-- Updated icon for Graphic Design -->
+                        </div>
+                        <div class="service-text">
+                            <h3>Graphic Design</h3> <!-- Updated title for Graphic Design -->
+                            <p>
+                                I specialize in creating unique and professional logos, posters,
+                                and other graphic designs tailored to your needs. My designs aim to effectively
+                                 communicate your brand message and attract your target audience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i> <!-- Updated icon for Networking -->
+                        </div>
+                        <div class="service-text">
+                            <h3>Networking Services</h3> <!-- Updated title for Networking Services -->
+                            <p>
+                                I offer comprehensive networking services including network setup,
+                                maintenance and troubleshooting. My work ensures reliable and secure
+                                connections for your home or business, optimizing your network for peak performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -176,13 +222,16 @@
                 {{-- <h2>Working Experience</h2> --}}
             </header>
             <div class="timeline">
+
+
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2006 - 2014</div>
-                        <h2>Primary Education</h2>
-                        <h4>Muhaya Primary School</h4>
+                        <div class="timeline-date">2019 - 2025</div>
+                        <h2>University</h2>
+                        <h4>University of Eastern Africa, Baraton</h4>
                         <p>
-                            Completed foundational education and established a solid academic background.
+                            Specialized in software engineering, concentrating on creating efficient and dependable
+                            software solutions for complex challenges
                         </p>
                     </div>
                 </div>
@@ -198,29 +247,30 @@
                 </div>
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2045 - 2025</div>
-                        <h2>University</h2>
-                        <h4>University of Eastern Africa, Baraton</h4>
+                        <div class="timeline-date">2006 - 2014</div>
+                        <h2>Primary Education</h2>
+                        <h4>Muhaya Primary School</h4>
                         <p>
-                            Specialized in software engineering, concentrating on creating efficient and dependable
-                            software solutions for complex challenges
+                            Completed foundational education and established a solid academic background.
                         </p>
                     </div>
                 </div>
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2020</div>
+                        {{-- <div class="timeline-date">2020</div> --}}
                         <h2>IT Consultant</h2>
                         <h4>Baraton University</h4>
                         <p>
-                            Operated as a freelancer, offering expertise in diverse IT fields such as web development
-                            and project management.
+                            Provided professional guidance and solutions in various IT domains including web development,
+                            project management and system optimization. Collaborated with Baraton University to enhance their IT
+                            infrastructure and operations.
                         </p>
                     </div>
+
                 </div>
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2020 - 2022</div>
+                        {{-- <div class="timeline-date">2020 - 2022</div> --}}
                         <h2>Web Developer</h2>
                         <h4>Mcomps Limited</h4>
                         <p>
@@ -232,7 +282,7 @@
 
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2021 - 2022</div>
+                        {{-- <div class="timeline-date">2021 - 2022</div> --}}
                         <h2>System Admin</h2>
                         <h4>Baraton University</h4>
                         <p>
@@ -242,36 +292,67 @@
                 </div>
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2023</div>
-                        <h2>Networking</h2>
-                        <h4>Kengen Kipevu Mombasa</h4>
+                        {{-- <div class="timeline-date">2023</div> --}}
+                        <h2>Networking and IT Support</h2>
+                        <h4>Kengen Kipevu, Mombasa</h4>
                         <p>
-                            Designed and implemented robust network architectures to meet organizational needs, ensuring
-                            scalability and reliability.
+                            Collaborated with Magal Solutions to provide networking services including network architecture design,
+                             maintain network infrastructure,
+                             troubleshooting and CCTV installation at Kengen Kipevu, Mombasa.
+                             Ensured the smooth operation of computer systems and assisted in troubleshooting issues.
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        {{-- <div class="timeline-date">2023</div> --}}
+                        <h2>Software Engineering Intern</h2>
+                        <h4>Smatech Labs LLC, Mombasa</h4>
+                        <p>
+                            Acquired practical web development experience during an internship at Smatech Labs.
                         </p>
                     </div>
                 </div>
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">2023</div>
-                        <h2>Web Development Intern</h2>
-                        <h4>Afric Developers LLC</h4>
+                        {{-- <div class="timeline-date">2023</div> --}}
+                        <h2>Software Engineering Attachment</h2>
+                        <h4>Afrix Developers, Mombasa</h4>
                         <p>
-                            Acquired practical web development experience during an internship at Smatech Labs
+                            Acquired practical experience during an Attachment at Afrix Developers.
+                            Worked on web development projects, network setup and configuration,
+                             as well as implementing DevOps practices.
                         </p>
                     </div>
                 </div>
+
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Since 2024</div>
+                        {{-- <div class="timeline-date">Since 2024</div> --}}
                         <h2>Software Engineer </h2>
 
-                        <h4>At <a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a></h4>
+                        <h4><a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a></h4>
                         <p>
-                            We design, develop, and support business applications using the latest technology and standards.
+                            We design, develop, and support business applications using the latest technology and
+                            standards.
                         </p>
                     </div>
                 </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        {{-- <div class="timeline-date">2024</div> --}}
+                        <h2>Production and Quality Assurance Manager</h2>
+                        <h4> <a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a></h4>
+                        <p>
+                            Ensures production of high-quality softwares by implementing stringent quality assurance
+                            processes and continuous improvement techniques.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -304,6 +385,7 @@
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>My Portfolio</p>
                 <h2>My Excellent Portfolio</h2>
+                <p>Below are some of my projects</p>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -674,36 +756,43 @@
                         <div class="contact-form">
                             <div id="success"></div>
                             @if (Session::has('message'))
-                                <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
-
+                                <div class="alert alert-success" role="alert">{{ Session::get('message') }}</div>
                             @endif
                             <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="name" wire:model='name' required=""
-                                        placeholder="Your Name" required="required"
+                                    <input type="text" class="form-control" id="name" wire:model='name'
+                                        required="" placeholder="Your Name" required="required"
                                         data-validation-required-message="Please enter your name" />
                                     <p class="help-block"></p>
-                                    @error('name') <p class="text-danger">{{$message}}</p> @enderror
+                                    @error('name')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" id="email" wire:model='email' required=""
-                                        placeholder="Your Email" required="required"
+                                    <input type="email" class="form-control" id="email" wire:model='email'
+                                        required="" placeholder="Your Email" required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block"></p>
-                                    @error('email') <p class="text-danger">{{$message}}</p> @enderror
+                                    @error('email')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="subject" wire:model='subject' required="" placeholder="Subject"
-                                        required="required"
+                                    <input type="text" class="form-control" id="subject" wire:model='subject'
+                                        required="" placeholder="Subject" required="required"
                                         data-validation-required-message="Please enter a subject" />
                                     <p class="help-block"></p>
-                                    @error('subject') <p class="text-danger">{{$message}}</p> @enderror
+                                    @error('subject')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" id="message" wire:model='message' required="" placeholder="Message" required="required"
-                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <textarea class="form-control" id="message" wire:model='message' required="" placeholder="Message"
+                                        required="required" data-validation-required-message="Please enter your message"></textarea>
                                     <p class="help-block"></p>
-                                    @error('message') <p class="text-danger">{{$message}}</p> @enderror
+                                    @error('message')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
                                     <button class="btn" type="submit" id="sendMessageButton">Send
