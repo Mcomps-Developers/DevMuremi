@@ -12,7 +12,7 @@
 
                         </div>
                         <div class="hero-btn">
-                            <button wire:click="downloadCv" class="btn btn-primary">Hire Me</button>
+                            <button wire:click="downloadCv" class="btn btn-primary">My Cv</button>
                             <a href="#contact" class="btn">Contact Me</a>
                         </div>
 
@@ -316,18 +316,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        {{-- <div class="timeline-date">2023</div> --}}
-                        <h2>Software Engineering Attachment</h2>
-                        <h4>Afrix Developers, Mombasa</h4>
-                        <p>
-                            Acquired practical experience during an Attachment at Afrix Developers.
-                            Worked on web development projects, network setup and configuration,
-                             as well as implementing DevOps practices.
-                        </p>
-                    </div>
-                </div>
+
 
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
@@ -344,7 +333,7 @@
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         {{-- <div class="timeline-date">2024</div> --}}
-                        <h2>Production and Quality Assurance Manager</h2>
+                        <h2>Production and Quality Assurance</h2>
                         <h4> <a href="https://m.mcomps.co.ke/"><b>Mcomps Limited</b></a></h4>
                         <p>
                             Ensures production of high-quality softwares by implementing stringent quality assurance

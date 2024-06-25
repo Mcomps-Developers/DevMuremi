@@ -73,7 +73,7 @@
                     <h3>Crossrodes, Bungoma, Kenya</h3>
                     <div class="footer-menu">
                         <p>+254 794069346</p>
-                        <p>petermuremi351@gmail.com</p>
+                        <p>muremi@mcomps.africa</p>
                     </div>
                     <div class="footer-social">
                         <a href="https://wa.me/254794069346?text=Hello%2C%20I%20would%20like%20to%20contact%20you" target="_blank">
