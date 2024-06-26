@@ -12,7 +12,12 @@
 
                         </div>
                         <div class="hero-btn">
-                            <button wire:click="downloadCv" class="btn btn-primary">My Cv</button>
+                            <button class="btn btn-primary">
+                                <a href="{{ asset('img/muremiCv.pdf') }}" target="_blank" style="color: inherit; text-decoration: none;">
+                                    My CV
+                                </a>
+                            </button>
+
                             <a href="#contact" class="btn">Contact Me</a>
                         </div>
 
